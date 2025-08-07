@@ -5,22 +5,49 @@ with open('home.html', 'r') as html_file:
 
     soup = BeautifulSoup(content, 'lxml')
 
-    get_titles = soup.find_all('h5', class_ = 'card-title')
-    for getAll in get_titles:
-        print(getAll.text)
+    # titulos = soup.find_all('h5', class_ = 'card-title')
+    # for getTitutlo in titulos:
+    #     print(getTitutlo.text)
 
+
+    # precio = soup.find_all('div', class_ = 'card-body')
+    # for getPrecios in precio:
+    #     lastPrice = getPrecios.a.text.split()[-1]
+    #     print(lastPrice)
     
-    get_price = soup.find_all('div', class_='card-body')
-    for prices in get_price:
-        price = prices.a.text.split()[-1]
-        print(price)
+    # contenidoP = soup.find_all('p', class_ = 'card-text')
+    # for encontrar in contenidoP:
+    #     print(encontrar.text)
+    
+    # contarCursos = len(soup.find_all('div', class_ = 'card'))
+    # print(contarCursos)
 
-    text_p = soup.find_all('div', class_ = 'card-body')
-    for get_p in text_p:
-        description = get_p.p.text
-        print(description)
+    # cuestenMas = soup.find_all('div', class_ = 'card-body')
 
-        total_courses = len(soup.find_all('div', class_='card'))
-        print(f'Total courses: {total_courses}')
+    # for contando in cuestenMas:
+    #     numeroEncontrado = int(contando.a.text.split()[-1].replace('$', ''))
+    #     if numeroEncontrado > 30:
+    #         print(numeroEncontrado)
+
+    # mostrarId = soup.find_all('div', class_ = 'card')
+
+    # for buscandoId in mostrarId:
+    #     idCard = buscandoId.get('id')
+    #     print(idCard)
+
+
+    # encontrarTexto = soup.find_all('div', class_ = 'card-body')
+
+    # for subject in encontrarTexto:
+    #     if 'Python' in subject.h5.text:
+    #         print(subject.h5.text)
+
+    # NombreCurso = soup.find_all('div', class_ = 'card-body')
+
+    # for encontrandoText in NombreCurso:
+    #     titulo = encontrandoText.h5.text
+    #     precio = encontrandoText.a.text.split()[-1]
+
+    #     print ( titulo + ' ' + precio )
 
     
